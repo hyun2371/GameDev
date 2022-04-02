@@ -1,0 +1,2 @@
+C:\Users\Gahyun\GameDev\obj\Debug\Assembly-CSharp-firstpass.csproj.AssemblyReference.cache
+C:\Users\Gahyun\GameDev\obj\Debug\Assembly-CSharp-firstpass.csproj.CoreCompileInputs.cache
