@@ -68,10 +68,10 @@
     <Compile Include="Assets\Week02\week02_GSwUnity_SceneManager.cs" />
     <Compile Include="Assets\Week03\Magic8Ball_Ball.cs" />
     <Compile Include="Assets\Shared\Scripts\SimpleCameraController.cs" />
+    <Compile Include="Assets\week05\Game_FPS\Week05_FPS_Robot.cs" />
     <Compile Include="Assets\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />
     <Compile Include="Assets\Week04\Simon_2A_Colors.cs" />
     <Compile Include="Assets\week05\Game_FPS\Week05_FPS_Player.cs" />
-    <Compile Include="Assets\week05\Game_FPS\Week05_FPS_Robot.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

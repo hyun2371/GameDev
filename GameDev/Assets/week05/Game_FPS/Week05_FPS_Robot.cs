@@ -5,17 +5,15 @@ using UnityEngine;
 
 public class Week05_FPS_Robot : MonoBehaviour
 {
-    public GameObject BulletPrefab;
+    public GameObject BulletPrefab; //inspector에서 prefab을 drap drop
     public int bulletSpeed = 3000;
 
     AudioSource Audio;
     public AudioClip ShootSound, ShotSound;
-
-    //파티클 총을 쏠 때 효과
     public GameObject ShootParticle, ShotParticle;
 
     float shootTime;
-    public float shootInterval; //총 쏘는 주기
+    public float shootInterval;
 
     // Start is called before the first frame update
     void Start()
@@ -26,12 +24,18 @@ public class Week05_FPS_Robot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (IsShootTime())
+        LookAtPlayer();
+
+       if (IsShootTime())
         {
-            Shoot();
-            InstantiateParticle(ShootParticle);
-            PlayClip(ShootSound);
+            if (IndentifyPlayer()) //플레이어를 발견하면 쏴라
+            {
+                Shoot();
+                InstantiateParticle(ShootParticle);
+                PlayClip(ShootSound);
+            }
         }
+
     }
 
     private void Shoot()
@@ -41,38 +45,62 @@ public class Week05_FPS_Robot : MonoBehaviour
         Destroy(Bullet, 2f);
     }
 
+    void LookAtPlayer()
+    {
+        transform.LookAt(GameObject.FindGameObjectWithTag("Player").transform);
+    }
+
+    bool IndentifyPlayer()
+    {
+        bool identified = false;
+        RaycastHit hit;
+        Ray sight = new Ray(transform.localPosition, transform.forward); //로봇 현재 위치 정면을 향해 감지 장치 빛을 쏨
+        Debug.DrawRay(transform.localPosition + transform.forward + transform.up * 1.4f, transform.forward, Color.green);
+
+        if (Physics.Raycast(sight, out hit))
+        {
+            if (hit.transform.tag == "Player") // 감지빛을 쏴서 플레이어가 맞으면 (=플레이어를 보면)
+            {
+                identified = true;
+            }
+        }
+        return identified;
+    }
+
     private bool IsShootTime()
     {
-        shootTime += Time.deltaTime; //프레임과 프레임 사이의 시간
+        shootTime += Time.deltaTime; //프레임과 프레임 사이의 시간 누적
         if (shootTime > shootInterval)
         {
-            shootTime = UnityEngine.Random.Range(0, shootInterval*0.5f); //랜덤하게 시간 초기화
+            shootTime = UnityEngine.Random.Range(0, shootInterval * 0.5f); //shootTime 초기화
             return true;
         }
-
-        else return false;
+        else
+        {
+            return false;
+        }
     }
 
     GameObject InstantiateBullet()
     {
-       
-        GameObject Shooter = gameObject;
-        Vector3 ClonePos = Shooter.transform.position + Shooter.transform.forward *2f + Shooter.transform.up*  1.3f;
-        Quaternion CloneRot = Shooter.transform.rotation;
-
-        //총알이 카메라가 바라보는 방향, 위치를 기준으로 생성
+        GameObject Shooter = gameObject; //게임 스크립트가 할당되는 object
+        Vector3 ClonePos = Shooter.transform.position + Shooter.transform.forward * 1.4f + Shooter.transform.up * 1.8f; //위치 조정
+        Quaternion CloneRot = Shooter.transform.rotation;  //어느 방향을 바라보고 있는지
         GameObject Clone = Instantiate(BulletPrefab, ClonePos, CloneRot);
+
         return Clone;
     }
 
     void InstantiateParticle(GameObject Particle)
     {
-        GameObject Shooter =gameObject;
-        Vector3 ClonePos = Shooter.transform.position + Shooter.transform.forward * 1f + Shooter.transform.up * 1.3f;
+        GameObject Shooter = gameObject;
+        Vector3 ClonePos = Shooter.transform.position + Shooter.transform.forward * 1.1f + Shooter.transform.up * 1.8f;
         Quaternion CloneRot = Shooter.transform.rotation;
         GameObject Clone = Instantiate(Particle, ClonePos, CloneRot);
-        //Clone.transform.localScale = Vector3.one * 0.5f;
+        // Clone.transform.localScale = Vector3.one * 0.5f;
         Destroy(Clone, 2f);
+
+
     }
 
     void PlayClip(AudioClip clip)
@@ -83,12 +111,12 @@ public class Week05_FPS_Robot : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Bullet") //총알 맞으면
+        if (other.tag == "Bullet")
         {
             print("Robot hit");
             PlayClip(ShotSound);
             InstantiateParticle(ShotParticle);
+            Destroy(gameObject);
         }
     }
-
 }
