@@ -49,6 +49,7 @@ MonoBehaviour:
   BulletPrefab: {fileID: 1107517449689166897, guid: 7f2fe898ee069ca4e96063b896f7edde,
     type: 3}
   bulletSpeed: 3000
+  RobotHealth: 2
   ShootSound: {fileID: 8300000, guid: 8d791f3634f3a634db506b52115e5789, type: 3}
   ShotSound: {fileID: 8300000, guid: a01d875265d2a28458fe390d82026d4d, type: 3}
   ShootParticle: {fileID: 1337198075554910, guid: 25c7aa9ad705fe143a4d71c1c8deb7d4,
@@ -68,7 +69,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.044
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -162,10 +163,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.59406114
-  m_Height: 2.418675
+  m_Radius: 0.53330564
+  m_Height: 2.3327765
   m_Direction: 1
-  m_Center: {x: 0, y: -0.5109174, z: -3.475155}
+  m_Center: {x: -0.04226947, y: 1.091105, z: 0.22194934}
 --- !u!1001 &5329344125510959198
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -181,17 +182,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: aa4e19b6c3c558343961201879d928f1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.13859439
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aa4e19b6c3c558343961201879d928f1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5912573
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aa4e19b6c3c558343961201879d928f1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.832641
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aa4e19b6c3c558343961201879d928f1,
         type: 3}

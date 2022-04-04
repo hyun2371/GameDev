@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Week05_FPS_Player : MonoBehaviour
-{
+{   
     public GameObject BulletPrefab; //inspector에서 prefab을 drap drop
     public int bulletSpeed = 3000;
 
@@ -11,15 +11,22 @@ public class Week05_FPS_Player : MonoBehaviour
     public AudioClip ShootSound, ShotSound;
     public GameObject ShootParticle, ShotParticle;
 
+    public int MaxHealth =10;
+    public int CurrentHealth;
+    public HealthBar healthBar;
+
+
     // Start is called before the first frame update
     void Start()
     {
+        CurrentHealth = MaxHealth;
+        healthBar.SetMaxHealth(MaxHealth);
         Audio = GameObject.Find("FPS").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
-    {
+    {   
         if (Input.GetMouseButtonDown(0)) //왼쪽 마우스 버튼을 누르면
         {
             print("shoot");
@@ -68,8 +75,15 @@ public class Week05_FPS_Player : MonoBehaviour
         if (other.tag == "Bullet")
         {
             print("Player hit");
+            CurrentHealth -= 1;
+            healthBar.SetHealth(CurrentHealth);
             PlayClip(ShotSound);
             InstantiateParticle(ShotParticle);
+
+            if (CurrentHealth == 0)
+            {
+                GameObject.Find("GameManager").GetComponent<GameManager>().EndGame();
+            }
         }
     }
 }

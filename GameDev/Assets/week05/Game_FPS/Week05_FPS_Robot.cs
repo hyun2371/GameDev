@@ -2,18 +2,20 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Week05_FPS_Robot : MonoBehaviour
 {
     public GameObject BulletPrefab; //inspectorø°º≠ prefab¿ª drap drop
     public int bulletSpeed = 3000;
-
+    public int RobotHealth = 2;
     AudioSource Audio;
     public AudioClip ShootSound, ShotSound;
     public GameObject ShootParticle, ShotParticle;
 
     float shootTime;
     public float shootInterval;
+
 
     // Start is called before the first frame update
     void Start()
@@ -109,6 +111,8 @@ public class Week05_FPS_Robot : MonoBehaviour
         Audio.Play();
     }
 
+   
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Bullet")
@@ -116,7 +120,12 @@ public class Week05_FPS_Robot : MonoBehaviour
             print("Robot hit");
             PlayClip(ShotSound);
             InstantiateParticle(ShotParticle);
-            Destroy(gameObject);
+            RobotHealth--;
+            if (RobotHealth == 0)
+            {    
+                Destroy(gameObject);
+                GameObject.Find("Score").GetComponent<ScoreManage>().AddScore();
+            }
         }
     }
 }

@@ -59,6 +59,7 @@
     <Compile Include="Assets\Shared\Scripts\SimpleCharacterMotor.cs" />
     <Compile Include="Assets\Week04\Simon_2A_Game_.cs" />
     <Compile Include="Assets\Week04\ShootingGame\FPShooter.cs" />
+    <Compile Include="Assets\week05\Game_FPS\Week05_FPS_Player.cs" />
     <Compile Include="Assets\Simon_2A_Game.cs" />
     <Compile Include="Assets\Shared\Scripts\ProximityActivate.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
@@ -71,7 +72,16 @@
     <Compile Include="Assets\week05\Game_FPS\Week05_FPS_Robot.cs" />
     <Compile Include="Assets\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />
     <Compile Include="Assets\Week04\Simon_2A_Colors.cs" />
-    <Compile Include="Assets\week05\Game_FPS\Week05_FPS_Player.cs" />
+    <Compile Include="Assets\week05\HealthBar.cs" />
+    <Compile Include="Assets\week05\GameManager.cs" />
+    <Compile Include="Assets\GameManager.cs" />
+    <Compile Include="Assets\GenerateRobot.cs" />
+    <Compile Include="Assets\GetScore.cs" />
+    <Compile Include="Assets\ScoreManage.cs" />
+    <Compile Include="Assets\RobotManage.cs" />
+    <Compile Include="Assets\CubeManage.cs" />
+    <Compile Include="Assets\week05\Game_FPS\Week05_FPS_RobotManage.cs" />
+    <Compile Include="Assets\week05\Game_FPS\Week05_FPS_CubeManage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
