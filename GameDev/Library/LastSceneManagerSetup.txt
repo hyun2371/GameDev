@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/week05/Week05_FPS.unity
+- path: Assets/Week06_Jump/Week06_Jump.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
