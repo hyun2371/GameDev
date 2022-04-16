@@ -4,4 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Week07_2DGame/FallingArrowsF/FallingArrows.unity
+    guid: e8cb95827a2a04c4fa5f9d9fcba917b9
+  - enabled: 1
+    path: Assets/Week07_2DGame/FallingArrowsF/FallingArrows_ClearScene.unity
+    guid: 3975c11d3f4cf2347b219c0483c3adec
+  - enabled: 1
+    path: Assets/Week07_2DGame/Jump2D/Jump/Jump2D.unity
+    guid: 54f0ac3a532c9894681774f74dbb3480
+  - enabled: 1
+    path: Assets/Week07_2DGame/Jump2D/Jump/Jump2D_ClearScene.unity
+    guid: 529c18cc7bbd8e146b987501fadc7b5b
+  m_configObjects: {}

@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Shootable
   - Bullet
+  - RideTrigger
+  - Snow
+  - Snowman
   layers:
   - Default
   - TransparentFX
