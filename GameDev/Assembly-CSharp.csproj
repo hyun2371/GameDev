@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Week06_Jump\Week06_Jump_ManageProgress.cs" />
     <Compile Include="Assets\Shared\Scripts\SimpleCharacterMotor.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Week04_Simon\Simon_2A_Game_.cs" />
     <Compile Include="Assets\Week06_Jump\Week06_Jump_Coin.cs" />
     <Compile Include="Assets\Week04_Simon\ShootingGame\FPShooter.cs" />
@@ -65,6 +66,15 @@
     <Compile Include="Assets\CubeManage.cs" />
     <Compile Include="Assets\AurynSky\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
     <Compile Include="Assets\week05_FPS\HealthBar.cs" />
+=======
+    <Compile Include="Assets\Week04\Simon_2A_Game_.cs" />
+    <Compile Include="Assets\Week06_Jump\Week06_Jump_Coin.cs" />
+    <Compile Include="Assets\Week04\ShootingGame\FPShooter.cs" />
+    <Compile Include="Assets\week05\Game_FPS\Week05_FPS_Player.cs" />
+    <Compile Include="Assets\CubeManage.cs" />
+    <Compile Include="Assets\AurynSky\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
+    <Compile Include="Assets\week05\HealthBar.cs" />
+>>>>>>> 912226dd035ddaa1417d17bb2c582b85cd133d48
     <Compile Include="Assets\Simon_2A_Game.cs" />
     <Compile Include="Assets\Shared\Scripts\ProximityActivate.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
@@ -76,6 +86,7 @@
     <Compile Include="Assets\GetScore.cs" />
     <Compile Include="Assets\Shared\Ramps\Runtime\RampAsset.cs" />
     <Compile Include="Assets\RobotManage.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Week03_Magic8Ball\Magic8Ball_Button.cs" />
     <Compile Include="Assets\Week06_Jump\Week06_Jump_GameManager.cs" />
     <Compile Include="Assets\Week02\week02_GSwUnity_SceneManager.cs" />
@@ -99,6 +110,23 @@
     <Compile Include="Assets\Week07_2DGame\Jump2D\Jump\Jump2D_PlayerController.cs" />
     <Compile Include="Assets\Week07_2DGame\Jump2D\Jump\Jump2D_CameraController.cs" />
     <Compile Include="Assets\Week07_2DGame\Jump2D\Jump\Jump2D_Restart.cs" />
+=======
+    <Compile Include="Assets\Week03\Magic8Ball_Button.cs" />
+    <Compile Include="Assets\Week06_Jump\Week06_Jump_GameManager.cs" />
+    <Compile Include="Assets\Week02\week02_GSwUnity_SceneManager.cs" />
+    <Compile Include="Assets\Week03\Magic8Ball_Ball.cs" />
+    <Compile Include="Assets\GenerateRobot.cs" />
+    <Compile Include="Assets\week05\Game_FPS\Week05_FPS_RobotManage.cs" />
+    <Compile Include="Assets\Week06_Jump\Week06_Jump_StarManage.cs" />
+    <Compile Include="Assets\week05\Game_FPS\Week05_FPS_CubeManage.cs" />
+    <Compile Include="Assets\Shared\Scripts\SimpleCameraController.cs" />
+    <Compile Include="Assets\week05\Game_FPS\Week05_FPS_Robot.cs" />
+    <Compile Include="Assets\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />
+    <Compile Include="Assets\Week06_Jump\Week06_Jump_SnowmanManage.cs" />
+    <Compile Include="Assets\GameManager.cs" />
+    <Compile Include="Assets\Week04\Simon_2A_Colors.cs" />
+    <Compile Include="Assets\Week06_Jump\Week06_Jump_Player.cs" />
+>>>>>>> 912226dd035ddaa1417d17bb2c582b85cd133d48
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

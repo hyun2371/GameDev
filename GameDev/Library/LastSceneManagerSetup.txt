@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Week07_2DGame/Jump2D/Jump/Jump2D.unity
+=======
+- path: Assets/Week06_Jump/Week06_Jump.unity
+>>>>>>> 912226dd035ddaa1417d17bb2c582b85cd133d48
   isLoaded: 1
   isActive: 1
   isSubScene: 0

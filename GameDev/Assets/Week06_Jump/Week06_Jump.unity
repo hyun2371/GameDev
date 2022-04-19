@@ -6379,6 +6379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a408ffcd7f04958488ee30e9b832da4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
 --- !u!1 &745841724
 GameObject:
   m_ObjectHideFlags: 0
@@ -6458,6 +6459,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 745841724}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 912226dd035ddaa1417d17bb2c582b85cd133d48
 --- !u!4 &769166876 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 413796, guid: caec3071e64dd5f45b071a01202302e3,
@@ -7600,7 +7603,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 118, y: -16.3}
+=======
+  m_AnchoredPosition: {x: 80.4, y: -16.3}
+>>>>>>> 912226dd035ddaa1417d17bb2c582b85cd133d48
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1310090754
@@ -8546,7 +8553,11 @@ PrefabInstance:
     - target: {fileID: 2637009776713383213, guid: 0e42640d663bed7428c469b2d413d971,
         type: 3}
       propertyPath: m_IsActive
+<<<<<<< HEAD
       value: 1
+=======
+      value: 0
+>>>>>>> 912226dd035ddaa1417d17bb2c582b85cd133d48
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e42640d663bed7428c469b2d413d971, type: 3}
@@ -9539,7 +9550,10 @@ RectTransform:
   - {fileID: 535049223}
   - {fileID: 1542940326}
   - {fileID: 87938776}
+<<<<<<< HEAD
   - {fileID: 745841725}
+=======
+>>>>>>> 912226dd035ddaa1417d17bb2c582b85cd133d48
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
