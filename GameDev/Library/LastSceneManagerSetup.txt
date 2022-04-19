@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Week07_2DGame/Jump2D/Jump/Jump2D.unity
+- path: Assets/Week02/week02_GSwUnity_Indoor.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
